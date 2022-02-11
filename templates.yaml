@@ -47,7 +47,7 @@ spec:
   steps:
     - id: create-compose
       name: Create Compose
-      action: create-compose
+      action: create-compose-env
       # input:
       #   url: ./template
       #   values:
