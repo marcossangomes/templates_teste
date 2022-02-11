@@ -13,16 +13,16 @@ spec:
   these are the steps which are rendered in the frontend with the form input
   parameters:
     - title: Fill in some steps
-      required:
-        - name
-      properties:
-        name:
-          title: Name
-          type: string
-          description: Unique name of the component
-          ui:autofocus: true
-          ui:options:
-            rows: 5
+#       required:
+#         - name
+#       properties:
+#         name:
+#           title: Name
+#           type: string
+#           description: Unique name of the component
+#           ui:autofocus: true
+#           ui:options:
+#             rows: 5
         owner:
           title: Owner
           type: string
@@ -31,17 +31,17 @@ spec:
           ui:options:
             allowedKinds:
               - Group
-    - title: Choose a location
-      required:
-        - repoUrl
-      properties:
-        repoUrl:
-          title: Repository Location
-          type: string
-          ui:field: RepoUrlPicker
-          ui:options:
-            allowedHosts:
-              - github.com
+#     - title: Choose a location
+#       required:
+#         - repoUrl
+#       properties:
+#         repoUrl:
+#           title: Repository Location
+#           type: string
+#           ui:field: RepoUrlPicker
+#           ui:options:
+#             allowedHosts:
+#               - github.com
 
   # here's the steps that are executed in series in the scaffolder backend
   steps:
