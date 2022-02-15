@@ -5,7 +5,7 @@ kind: Template
 metadata:
   name: teste-action
   title: Test Action template
-  description: scaffolder v1beta4 template demo
+  description: scaffolder v1beta6 template demo
 spec:
   owner: backstage/techdocs-core
   type: service
