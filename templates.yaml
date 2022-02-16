@@ -5,24 +5,24 @@ kind: Template
 metadata:
   name: teste-action
   title: Test Action template
-  description: scaffolder v1beta9 template demo
+  description: scaffolder v1beta10 template demo
 spec:
   owner: backstage/techdocs-core
   type: service
 
 #   these are the steps which are rendered in the frontend with the form input
   parameters:
-#     - title: Fill in some steps
-#       required:
-#         - name
-#       properties:
-#         name:
-#           title: Name
-#           type: string
-#           description: Unique name of the component
-#           ui:autofocus: true
-#           ui:options:
-#             rows: 5
+    - title: Write your parent path
+      required:
+        - name
+      properties:
+        name:
+          title: Name
+          type: string
+          description: 'parent path'
+          ui:autofocus: true
+          ui:options:
+            rows: 5
         owner:
           title: Owner
           type: string
@@ -50,6 +50,9 @@ spec:
       action: create-compose-env
       input:
         parent: 'teste'
+      input:
+        values:
+          parent: '{{ parameters.name }}'
       #   values:
       #     name: ${{ parameters.name }}
       #     owner: ${{ parameters.owner }}
