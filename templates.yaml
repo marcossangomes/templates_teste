@@ -49,10 +49,10 @@ spec:
       name: Create Compose
       action: create-compose-env
       input:
-        parent: 'teste'
-      input:
-        values:
-          parent: '{{ parameters.name }}'
+        parent: '{{ parameters.name }}'
+#       input:
+#         values:
+#           parent: '{{ parameters.name }}'
       #   values:
       #     name: ${{ parameters.name }}
       #     owner: ${{ parameters.owner }}
