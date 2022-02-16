@@ -5,7 +5,7 @@ kind: Template
 metadata:
   name: teste-action
   title: Test Action template
-  description: scaffolder v1beta6 template demo
+  description: scaffolder v1beta9 template demo
 spec:
   owner: backstage/techdocs-core
   type: service
@@ -48,8 +48,8 @@ spec:
     - id: create-compose
       name: Create Compose
       action: create-compose-env
-      # input:
-      #   url: ./template
+      input:
+        parent: 'teste'
       #   values:
       #     name: ${{ parameters.name }}
       #     owner: ${{ parameters.owner }}
